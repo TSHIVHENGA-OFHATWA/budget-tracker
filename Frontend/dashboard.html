@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Budget Tracker</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <div class="dashboard">
+        <h1>Your Dashboard</h1>
+        <p>Welcome, <span id="username">John Doe</span></p>
+        <p>Balance: $<span id="balance">0.00</span></p>
+        <button onclick="window.location.href='expense.html'">Add Expense</button>
+        <button onclick="window.location.href='income.html'">Add Income</button>
+        <button onclick="window.location.href='report.html'">View Report</button>
+        <button onclick="logout()">Logout</button>
+    </div>
+    <script src="assets/js/dashboard.js"></script>
+</body>
+</html>

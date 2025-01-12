@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget Tracker</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <div id="app">
+        <!-- Registration Form Section -->
+        <section id="registerSection">
+            <h2>Register</h2>
+            <form id="registerForm">
+                <input type="text" id="surname" placeholder="Surname" required>
+                <input type="text" id="name" placeholder="Name" required>
+                <input type="email" id="email" placeholder="Email" required>
+                <input type="text" id="phone" placeholder="Phone Number" required>
+                <input type="password" id="thepassword" placeholder="Password" required>
+                <input type="password" id="confirmpassword" placeholder="Confirm Password" required>
+                <button type="submit">Register</button>
+            </form>
+            <p>Already have an account? <a href="#" id="showLogin">Login here</a></p>
+        </section>
+
+        <!-- Login Form Section -->
+        <section id="loginSection" style="display: none;">
+            <h2>Login</h2>
+            <form id="loginForm">
+                <input type="email" id="loginEmail" placeholder="Email" required>
+                <input type="password" id="loginPassword" placeholder="Password" required>
+                <button type="submit">Login</button>
+            </form>
+            <p>Don't have an account? <a href="#" id="showRegister">Register here</a></p>
+        </section>
+
+        <!-- Dashboard Section (visible after login) -->
+        <section id="dashboardSection" style="display: none;">
+            <h2>Welcome to Your Dashboard</h2>
+            <div id="expenseData"></div>
+            <div id="incomeData"></div>
+            <button id="logoutButton">Logout</button>
+        </section>
+    </div>
+
+    <script src="assets/js/register.js"></script>
+    <script src="assets/js/login.js"></script>
+</body>
+</html>
