@@ -1,0 +1,13 @@
+button {
+  background: none;
+  border: none;
+  color: blue;
+  cursor: pointer;
+  text-decoration: underline;
+  font-size: 1rem;
+  margin: 0 10px;
+}
+
+button:focus {
+  outline: none;
+}
